@@ -1,57 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ask Medy – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Ask Medy mobile application." />
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; line-height: 1.6; }
-    h1, h2 { color: #0A4FA3; }
-    a { color: #0A4FA3; }
+    :root {
+      --bg: #0b1220;
+      --card: #111a2e;
+      --text: #e9eefc;
+      --muted: #b8c2e6;
+      --accent: #6aa6ff;
+      --border: rgba(255,255,255,0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(106,166,255,0.18), transparent 60%),
+                  radial-gradient(1000px 600px at 90% 20%, rgba(132,255,199,0.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    header {
+      padding: 22px 18px;
+      border: 1px solid var(--border);
+      background: rgba(17, 26, 46, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      margin-top: 16px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: rgba(17, 26, 46, 0.65);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+    }
+    h2 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 18px; padding: 0; }
+    li { margin: 6px 0; color: var(--text); }
+    .note {
+      border-left: 3px solid var(--accent);
+      padding: 10px 12px;
+      margin: 12px 0;
+      background: rgba(106,166,255,0.08);
+      border-radius: 10px;
+      color: var(--muted);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    .email {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Ask Medy</h1>
-  <p>Last updated: November 2025</p>
+  <div class="wrap">
+    <header>
+      <h1>Ask Medy – Privacy Policy</h1>
+      <p class="meta">
+        Ask Medy respects your privacy. This Privacy Policy explains how information is handled when you use the Ask Medy mobile application.
+      </p>
+      <div class="badge">Last updated: <span id="last-updated">2025-01-01</span></div>
+    </header>
 
-  <p>Ask Medy is a health‑assistant mobile app designed to help users understand common health issues, manage pill reminders, and access AI‑powered guidance. Your privacy is important to us, and this policy explains what information we collect and how it is used.</p>
+    <main>
+      <h2>1. Information Collection and Use</h2>
+      <p>Ask Medy does not collect, store, process, or share any personal data from users.</p>
+      <ul>
+        <li>No account creation is required</li>
+        <li>No personal identifiers are collected</li>
+        <li>No analytics, tracking, or advertising SDKs are used</li>
+        <li>No health data is stored on our servers</li>
+      </ul>
+      <p>All app functionality is available without providing personal information.</p>
 
-  <h2>1. Information We Collect</h2>
-  <p><strong>No personal data is shared with third parties.</strong> The app stores limited user data only on your device or securely in Firebase (if enabled).</p>
+      <h2>2. Health Information Disclaimer</h2>
+      <p>
+        Ask Medy provides general health-related information and AI-generated responses for informational purposes only.
+        The app does not store or process medical records and is not a replacement for professional medical advice.
+      </p>
+      <div class="note">
+        If you have urgent symptoms or a medical emergency, contact local emergency services immediately.
+      </div>
 
-  <h3>a. User‑Provided Information</h3>
-  <ul>
-    <li>Name, surname, age</li>
-    <li>Phone number (stored locally in the app only)</li>
-    <li>Pill reminders you create</li>
-  </ul>
+      <h2>3. Third-Party Services</h2>
+      <p>Ask Medy may contain links to external platforms used only for communication or support purposes:</p>
+      <ul>
+        <li>Instagram (developer profile)</li>
+        <li>Telegram (developer profile)</li>
+      </ul>
+      <p>
+        If you choose to contact us via these platforms, their own privacy policies apply.
+        Ask Medy does not control or collect data from these third-party services.
+      </p>
 
-  <h3>b. Automatically Collected Information</h3>
-  <p>Ask Medy does not collect analytics, location, or background data.</p>
+      <h2>4. Data Sharing</h2>
+      <p>Since Ask Medy does not collect user data, no data is shared with third parties.</p>
 
-  <h2>2. How We Use Your Information</h2>
-  <ul>
-    <li>To schedule pill reminders</li>
-    <li>To display personalized health information</li>
-    <li>To power AI chat responses</li>
-  </ul>
+      <h2>5. Children’s Privacy</h2>
+      <p>
+        Ask Medy does not knowingly collect any data from children under the age of 13.
+        Because no data collection occurs, the app is safe to use from a data privacy perspective.
+      </p>
 
-  <h2>3. AI Chat (Gemini API)</h2>
-  <p>Your AI chat queries are sent securely to Google Gemini API to generate answers. Ask Medy does not store or log your conversations.</p>
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>
+        If the app’s functionality changes in the future, this Privacy Policy may be updated.
+        Any changes will be reflected on this page.
+      </p>
 
-  <h2>4. Data Security</h2>
-  <p>All user data is stored securely using recommended Android practices. Sensitive data is not transmitted to any third party except Gemini API for chat responses.</p>
+      <h2>7. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy or the app, you can contact us at:</p>
+      <p class="email">📧 Email: <a href="mailto:husanovdostonbek1010@gmail.com">husanovdostonbek1010@gmail.com</a></p>
+      <p>📱 Telegram / Instagram: via linked profiles in the app</p>
+    </main>
 
-  <h2>5. Children's Privacy</h2>
-  <p>Ask Medy is not intended for users under 13 years of age.</p>
+    <footer>
+      © <span id="year"></span> Ask Medy. All rights reserved.
+    </footer>
+  </div>
 
-  <h2>6. Changes to This Policy</h2>
-  <p>We may update this policy. You will be notified inside the app when updates occur.</p>
-
-  <h2>7. Contact Us</h2>
-  <p>If you have questions, contact us at:</p>
-  <p><strong>Email:</strong> support@askmedy.app</p>
-  <p><strong>Telegram:</strong> https://t.me/Husanov_Doston</p>
-
+  <script>
+    // Optional: set these to whatever you want
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Change this date anytime you update the policy
+    document.getElementById("last-updated").textContent = "2025-12-27";
+  </script>
 </body>
 </html>
